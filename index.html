@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- header section start -->
+  <nav class="navbar navbar-expand-lg bg-blue">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img src="./assets/img/Logo.png" alt="logo" class="img-fluid"
+          width="180px"></a>
+      <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-danger2 fw-bold" aria-current="page" href="javascript:void()">Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="javascript:void()">Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="javascript:void()">Car Hire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="javascript:void()">Trip Finder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">inspiration</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English(GBD)
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item bg-blue text-light" href="javascript:void()">English</a></li>
+                <li><a class="dropdown-item bg-blue text-light" href="javascript:void()">Marathi</a></li>
+                <li><a class="dropdown-item bg-blue text-light" href="javascript:void()">Hindi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success2" href="#">Login</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- header section end -->
+
+  <!-- banner section start -->
+  <section class="banner position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-light ms-sm-4 position-absolute top-20" id="banner">
+          <h1>"The Best Place to find <br>the cheapest airfares"</h1>
+          <h4 class="fs-4 mt-4">-Every single time</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 bg-danger3 rounded py-1 mt-sm-3">
+          <nav class="mb-2">
+            <div class="nav nav-tabs  border-0" id="nav-tab" role="tablist">
+              <button class="nav-link border-0 rounded-0 active text-light bg-danger4 fs-13" id="nav-home-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                aria-selected="true">
+                <i class="fa-solid fa-plane-departure"></i> Flight
+              </button>
+              <button class="nav-link border-0 rounded-0 mx-1 bg-danger4 text-light fs-13" id="nav-profile-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                aria-selected="false">
+                <i class="fa-solid fa-hotel"></i> Hotels
+              </button>
+              <button class="nav-link border-0 rounded-0 text-light bg-danger4 fs-13" id="nav-contact-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                aria-selected="false">
+                <i class="fa-solid fa-car"></i> Cars
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-sm-6 col-lg-2" id="arrow">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
+                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter Destination city"
+                      aria-label="Destination">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="" aria-label="sdate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="First name" aria-label="edate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 ">
+                    <select name="select-passenger" class="form-control" id="select-passenger">
+                      <option selected>select passenger</option>
+                      <option value="1-pass">passenger-1</option>
+                      <option value="2-pass">passenger-2</option>
+                      <option value="3-pass">passenger-3</option>
+                      <option value="4-pass">passenger-4</option>
+                      <option value="5-pass">passenger-5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 col-lg-1">
+                    <input type="submit" class="form-control circle bg-danger2 border-0  mt-lg-2 text-white" placeholder="Search" aria-label="search">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-4 col-lg-2" id="arrow">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
+                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                  </div>
+
+                  <div class="col-4 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter Destination city"
+                      aria-label="Destination">
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <input type="date" class="form-control" placeholder="" aria-label="sdate">
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <input type="date" class="form-control" placeholder="First name" aria-label="edate">
+                  </div>
+                  <div class="col-6 col-lg-2 ">
+                    <select name="select-passenger" class="form-control" id="select-passenger">
+                      <option selected>select passenger</option>
+                      <option value="1-pass">passenger-1</option>
+                      <option value="2-pass">passenger-2</option>
+                      <option value="3-pass">passenger-3</option>
+                      <option value="4-pass">passenger-4</option>
+                      <option value="5-pass">passenger-5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 col-lg-1">
+                    <input type="submit" class="form-control circle bg-danger2 border-0  mt-lg-2 text-white" placeholder="Search" aria-label="search">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-sm-6 col-lg-2" id="arrow">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
+                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter Destination city"
+                      aria-label="Destination">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="" aria-label="sdate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="First name" aria-label="edate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 ">
+                    <select name="select-passenger" class="form-control" id="select-passenger">
+                      <option selected>select passenger</option>
+                      <option value="1-pass">passenger-1</option>
+                      <option value="2-pass">passenger-2</option>
+                      <option value="3-pass">passenger-3</option>
+                      <option value="4-pass">passenger-4</option>
+                      <option value="5-pass">passenger-5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 col-lg-1">
+                    <input type="submit" class="form-control circle bg-danger2 border-0  mt-lg-2 text-white" placeholder="Search" aria-label="search">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="d-flex" id="btnb">
+            <div class="btn-group">
+                <button type="button" class="btn bg-danger3 text-light bg-danger3 border-0 col-lg-2"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                Return Trip
+                </button>
+                <ul class="dropdown-menu bg-danger3">
+                    <li><a class="dropdown-item text-white" href="#">One Way</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Both Way</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Not Now</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn bg-danger3 text-light dropdown-toggle bg-danger3 border-0 col-lg-2"
+                  data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                  Economy
+                </button>
+                <ul class="dropdown-menu bg-danger3 text-light">
+                  <li><a class="dropdown-item text-white" href="#">Economy</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Primary</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Secondary</a></li>
+                  <li><a class="dropdown-item text-white" href="#">class-1</a></li>
+                </ul>
+              </div>
+              <div class="form-check form-check-inline mt-2 text-light col-lg-2">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Direct flight only</label>
+              </div>
+              <div class="form-check form-check-inline mt-2 text-light col-lg-3 ">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Include Nearby Airport</label>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner section end -->
+
+  <!-- fun section start -->
+  <section class="fun py-5 text-white">
+    <div class="container">
+      <div class="row">
+          <h2 CLASS="text-center fw-bold mt-3 mb-4" id="funtop">SOME FUN WE COVER</h2>
+      </div>
+      <div class="row" id="fundiv">
+        <div class="col-lg-2 col-md-4  col-sm-6 col-6">
+          <div class="bg-dark py-4 px-3 my-2 text-center">
+            <i class="fa-solid fa-person-biking fs-1 mb-3"></i>
+            <p class="fw-bold p">5670 M</p>
+            <p class="p">CYCLING TRACK</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class="bg-dark  py-4 px-3 my-2 text-center ">
+            <i class="fa-solid fa-people-arrows fs-1 mb-3"></i>
+            <p class="fw-bold p">480 M</p>
+            <p class="p">DISTANCE COVERD</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class="bg-dark  py-4 px-3 my-2 text-center ">
+            <i class="fa-solid fa-person-digging fs-1 mb-3"></i>
+            <p class="fw-bold p">5670 M</p>
+            <p class="p">ALTITUDE HIKED</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class="bg-dark py-4 px-3 my-2 text-center  ">
+            <i class="fa-solid fa-ship fs-1 mb-3"></i>
+            <p class="fw-bold p">5670 M</p>
+            <p class="p">SELING DISTANCE</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class=" py-4 px-3 my-2 text-center bg-dark  ">
+            <i class="fa-solid fa-mountain-sun fs-1 mb-3"></i>
+            <p class="fw-bold p">5670 M</p>
+            <p class="p">SPENT ADVENTURE</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <div class="bg-dark py-4 px-3 my-2 text-center">
+            <i class="fa-solid fa-house-flood-water-circle-arrow-right fs-1 mb-3"></i>
+            <p class="fw-bold p">5670 M</p>
+            <p class="p">JUNGLE DISTANCE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fun section end -->
+
+  <!-- newsletters section start -->
+  <section class="news">
+  <div class="container">
+      <div class="row py-4">
+        <div class="col-lg-4 "></div>
+        <div class="col-lg-8 text-center">
+          <h3 class="text-white fw-bold mt-5">SUBSCRIBE FOR OUR TRAVEL NEWSLETTER</h3>
+          <p class="text-light mx-md-5 px-md-5">Join our comunity of over 300,000 global readers who receive emails with filled with news,
+          pramotions and ather good stuff fron G adventures.
+          </p>
+          <form action="" class="mt-4" id="form2">
+            <input type="email" placeholder="Enter your email Address..." class="form-control text-white border-white bg-transparent rounded-0">
+            <button class="btn ms-2 rounded-0" id="button1">SEARCH</button>
+          </form>
+        </div>
+      </div>
+    
+  </section>
+  <!-- newsletters section end -->c
+
+  <!-- destination section start -->
+  <section class="destination py-4 bg-purple">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center fw-bold text-light">POPULAR DESTINATIONS</h3> 
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest2">
+            <div class="card-body">
+              <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
+              <p class="card-text">Some quick example text to build on the card title and content.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest2.jpg" class="card-img-top" alt="dest2">
+              <div class="card-body">
+                <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air<span class="text-danger2">Save $550</span></p>
+                <p class="card-text">Some quick example text to build on the card title and content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0" >
+              <img src="./assets/img/dest3.jpg" class="card-img-top" alt="dest3">
+              <div class="card-body">
+                <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air <span class="text-danger2">save $1150</span></p>
+                <p class="card-text">Some quick example text to build on the card title and content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest4.jpg" class="card-img-top" alt="dest4">
+              <div class="card-body">
+                <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
+                <p class="card-text">Some quick example text to build on the card title and  content.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row ">
+        <div class="col-lg-3  col-md-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0" >
+            <img src="./assets/img/dest5.jpg" class="card-img-top" alt="dest5">
+            <div class="card-body">
+              <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air <span class="text-danger2">Save $1650</span></p>
+              <p class="card-text">Some quick example text to build on the card title and  content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0" >
+            <img src="./assets/img/dest6.jpg" class="card-img-top" alt="dest6">
+            <div class="card-body">
+              <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air<span class="text-danger2">Save $250</span></p>
+              <p class="card-text">Some quick example text to build on the card title and  content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0" >
+            <img src="./assets/img/dest2.jpg" class="card-img-top" alt="dest6">
+            <div class="card-body">
+              <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
+              <p class="card-text">Some quick example text to build on the card title and  content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0" >
+            <img src="./assets/img/dest8.jpg" class="card-img-top" alt="dest6">
+            <div class="card-body">
+              <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
+              <p class="card-text">Some quick example text to build on the card title and  content.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </section>
+  <!-- destination section end -->
+
+  <!--  -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
