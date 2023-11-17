@@ -1,129 +1,226 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-.bg-dark{
-    background:#19191B;
+
+.bg-dark {
+    background: #19191B;
 }
-.bg-blue{
-    background-color:#141E3A;
+
+.bg-blue {
+    background-color: #141E3A;
 }
-.bg-danger2{
-    background:#D5385F;;
+
+.bg-danger2 {
+    background: #D5385F;
+    ;
 }
-.bg-danger3{
-    background:#5C327A;
+
+.bg-danger3 {
+    background: #5C327A;
 }
-.bg-danger4{
-    background:#441e5f;
+
+.bg-danger4 {
+    background: #441e5f;
 }
-.text-danger2{
+
+.text-danger2 {
     color: #D5385F;
 }
-.bg-warning2{
-    background: #FA9005; 
+
+.bg-warning2 {
+    background: #FA9005;
 }
-.text-success2{
-    color:#58932e;
+
+.text-success2 {
+    color: #58932e;
 }
-.text-dark{
-    color:#161616;
+
+.text-dark {
+    color: #161616;
 }
-.bg-purple{
+
+.bg-purple {
     background: #20162F;
 }
-.top-20{
- top:20%;
+
+.bg-purple1 {
+    background: #664CAD;
+    ;
 }
-.top-3{
-    top:3%;
+
+.top-20 {
+    top: 20%;
 }
+
+.top-3 {
+    top: 3%;
+}
+/* header section start */
+.lang a:hover{
+    background: #243256;
+    color:#fff;
+}
+
+/* header section end */
 /* banner section start */
-.banner{
-    width:100%;
-    height:550px;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/pic2.png);
+.banner {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/pic2.png);
     background-size: 100% 100%;
 }
-.nav-tabs .nav-link.active{
-    background:#D5385F;
+
+.nav-tabs .nav-link.active {
+    background: #D5385F;
 }
-.nav-tabs .nav-link{
-    background:#441e5f;
+
+.nav-tabs .nav-link {
+    background: #441e5f;
 }
-.fs-13{
+
+.fs-13 {
     font-size: 13px;
 }
-#arrow{
-    display:inline-flex;
+
+#arrow {
+    display: inline-flex;
+    width: 3.33%;
 }
-.p{
+
+.p {
     font-size: 12px;
-    margin:0px;
+    margin: 0px;
     line-height: 25px;
 }
-.check{
-    display:flex;
+
+.check {
+    display: flex;
 }
 
 /* banner section end */
 
 /* fun section start */
-.fun{
-    
-    height:auto;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/piramid.png);
+.fun {
+
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/piramid.png);
     background-size: 100% 100%;
 }
 
 /* fun section end */
 /* newsletter section start */
-.news{
+.news {
     height: auto;
-    background:url(../img/plane.png);
+    background: url(../img/news3.jpg);
     background-size: 100% 100%;
 
 }
-#form2{
+
+#form2 {
     display: flex;
 }
-#button1{
+
+#button1 {
     background: #fff;
-    color:#736E75;
+    color: #736E75;
 }
-.news ::placeholder{
+
+.news ::placeholder {
     color: #fff;
 }
+
 /* newsletter section end */
 
-@media screen and (min-width:992px){
-    .circle{
-        height:80px;
-        width:80px;
+/* estimate section start */
+#estimate div {
+    display: inline;
+}
+
+.form-select {
+    width: 16%;
+}
+
+
+/* estimate section end */
+
+/* footer section start */
+.footer {
+    height: auto;
+    background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/plane.png);
+    background-size: 100% 100%;
+
+}
+.w-10 {
+    max-width: 20px;
+}
+
+.w-15 {
+    max-width: 50px;
+}
+
+/* footer section end */
+
+@media screen and (min-width:992px) {
+    .circle {
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
         position: absolute;
-        top:8%;
-        right:5%;
+        top: 8%;
+        right: 5%;
 
     }
 
+    form {
+        display: flex;
+    }
+   
+
 }
 
-@media screen and (max-width:767px){
-    .d-flex div{
+@media screen and (max-width:767px) {
+    .d-flex div {
         display: block;
     }
+    #arrow{
+        display: none;
+    }
 }
-@media screen and (max-width:576px){
-    #banner{
-        top:3%;
+
+@media screen and (max-width:576px) {
+    #banner {
+        top: 3%;
     }
-    #btnbot div, #btnbot div button{
-     font-size:8px;
+
+    #btnbot div,
+    #btnbot div button {
+        font-size: 8px;
     }
-    #btnb, #btnb button{
+
+    #btnb,
+    #btnb button {
         font-size: 12px;
     }
 
+    .estimate div img {
+        display: none;
+    }
+    #arrow{
+        display: none;
+    }
+
+    .footer div div .country,
+    .footer div div .city,
+    .footer div div .site,
+    .footer .footbtom {
+        margin-left: 15px;
+
+    }
+
+    .footer .foot,
+    .footer .social {
+        text-align: center;
+    }
 }

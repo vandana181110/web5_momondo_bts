@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>webpage4_momondo</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -16,7 +16,7 @@
   <!-- header section start -->
   <nav class="navbar navbar-expand-lg bg-blue">
     <div class="container">
-      <a class="navbar-brand" href="#"> <img src="./assets/img/Logo.png" alt="logo" class="img-fluid"
+      <a class="navbar-brand" href="#"> <img src="./assets/img/logo.png" alt="logo" class="img-fluid"
           width="180px"></a>
       <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,9 +43,9 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="lang navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              <a class=" nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 English(GBD)
               </a>
@@ -98,12 +98,14 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <form action="">
-                <div class="row g-1">
-                  <div class="col-sm-6 col-lg-2" id="arrow">
+                <div class="row g-2">
+                  <div class="col-sm-6 col-lg-2" >
                     <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
-                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                   
                   </div>
-
+                   <div class="col-lg-1 col-md-6"id="arrow" >
+                    <span><i class="fa-solid fa-arrow-right-arrow-left p-2 " style="color:rgb(166, 239, 239)"></i></span>
+                   </div>
                   <div class="col-sm-6 col-lg-2">
                     <input type="text" class="form-control" placeholder="Enter Destination city"
                       aria-label="Destination">
@@ -132,23 +134,25 @@
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
               <form action="">
-                <div class="row g-1">
-                  <div class="col-4 col-lg-2" id="arrow">
+                <div class="row g-2">
+                  <div class="col-sm-6 col-lg-2" >
                     <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
-                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                   
                   </div>
-
-                  <div class="col-4 col-lg-2">
+                   <div class="col-lg-1 col-md-6"id="arrow" >
+                    <span><i class="fa-solid fa-arrow-right-arrow-left p-2 " style="color:rgb(166, 239, 239)"></i></span>
+                   </div>
+                  <div class="col-sm-6 col-lg-2">
                     <input type="text" class="form-control" placeholder="Enter Destination city"
                       aria-label="Destination">
                   </div>
-                  <div class="col-4 col-lg-2">
+                  <div class="col-sm-6 col-lg-2">
                     <input type="date" class="form-control" placeholder="" aria-label="sdate">
                   </div>
-                  <div class="col-4 col-lg-2">
+                  <div class="col-sm-6 col-lg-2">
                     <input type="date" class="form-control" placeholder="First name" aria-label="edate">
                   </div>
-                  <div class="col-6 col-lg-2 ">
+                  <div class="col-sm-6 col-lg-2 ">
                     <select name="select-passenger" class="form-control" id="select-passenger">
                       <option selected>select passenger</option>
                       <option value="1-pass">passenger-1</option>
@@ -166,12 +170,14 @@
             </div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
               <form action="">
-                <div class="row g-1">
-                  <div class="col-sm-6 col-lg-2" id="arrow">
+                <div class="row g-2">
+                  <div class="col-sm-6 col-lg-2" >
                     <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
-                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:rgb(166, 239, 239)"></i></span>
+                   
                   </div>
-
+                   <div class="col-lg-1 col-md-6"id="arrow" >
+                    <span><i class="fa-solid fa-arrow-right-arrow-left p-2 " style="color:rgb(166, 239, 239)"></i></span>
+                   </div>
                   <div class="col-sm-6 col-lg-2">
                     <input type="text" class="form-control" placeholder="Enter Destination city"
                       aria-label="Destination">
@@ -320,7 +326,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-12">
-          <div class="card border-3 m-4 mx-sm-0">
+          <div class="card border-3 m-3 mx-sm-0">
             <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest2">
             <div class="card-body">
               <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
@@ -329,7 +335,7 @@
           </div>
         </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card border-3 m-4 mx-sm-0">
+            <div class="card border-3 m-3 mx-sm-0">
               <img src="./assets/img/dest2.jpg" class="card-img-top" alt="dest2">
               <div class="card-body">
                 <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air<span class="text-danger2">Save $550</span></p>
@@ -338,7 +344,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card border-3 m-4 mx-sm-0" >
+            <div class="card border-3 m-3 mx-sm-0" >
               <img src="./assets/img/dest3.jpg" class="card-img-top" alt="dest3">
               <div class="card-body">
                 <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air <span class="text-danger2">save $1150</span></p>
@@ -347,7 +353,7 @@
             </div>
           </div>
           <div class="col-lg-3  col-md-6 col-12">
-            <div class="card border-3 m-4 mx-sm-0">
+            <div class="card border-3 m-3 mx-sm-0">
               <img src="./assets/img/dest4.jpg" class="card-img-top" alt="dest4">
               <div class="card-body">
                 <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
@@ -358,7 +364,7 @@
       </div>
       <div class="row ">
         <div class="col-lg-3  col-md-6 col-12">
-          <div class="card border-3 m-4 mx-sm-0" >
+          <div class="card border-3 m-3 mx-sm-0" >
             <img src="./assets/img/dest5.jpg" class="card-img-top" alt="dest5">
             <div class="card-body">
               <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air <span class="text-danger2">Save $1650</span></p>
@@ -367,7 +373,7 @@
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-12">
-          <div class="card border-3 m-4 mx-sm-0" >
+          <div class="card border-3 m-3 mx-sm-0" >
             <img src="./assets/img/dest6.jpg" class="card-img-top" alt="dest6">
             <div class="card-body">
               <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air<span class="text-danger2">Save $250</span></p>
@@ -376,7 +382,7 @@
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-12">
-          <div class="card border-3 m-4 mx-sm-0" >
+          <div class="card border-3 m-3 mx-sm-0" >
             <img src="./assets/img/dest2.jpg" class="card-img-top" alt="dest6">
             <div class="card-body">
               <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
@@ -385,7 +391,7 @@
           </div>
         </div>
         <div class="col-lg-3  col-md-6 col-12">
-          <div class="card border-3 m-4 mx-sm-0" >
+          <div class="card border-3 m-3 mx-sm-0" >
             <img src="./assets/img/dest8.jpg" class="card-img-top" alt="dest6">
             <div class="card-body">
               <p class="fw-bold my-2"><span class="text-danger2">$999</span> Rome,Florence and Veniec 9Nights Vacation w/Air</p>
@@ -398,7 +404,298 @@
   </section>
   <!-- destination section end -->
 
-  <!--  -->
+  <!--estimate section start -->
+  <section class="estimate py-4 bg-purple1 position-relative">
+    <div class="position-absolute bottom-0 end-0">
+      <img src="./assets/img/fort1.png" class="estimg mx-0" alt="">
+    </div>
+    <div class="container">
+      <h3 CLASS="text-white fw-bold mt-2">GET A QUICK ESTIMATE!</h3>
+      <p class="text-white fw-bold fs-6 mt-0">GET A PROFESSIONAL HELP</p>
+      <hr size="4px" style="width:50px; color:#fff">
+      <div class="row mb-4" id="estimate">
+        <form>
+          <select name="country" class="col-lg-2 col-sm-4 col-12 mb-2 py-2 mx-1">
+            <option>Travel purpose</option>
+            <option>holiday</option>
+            <option>Mediacal</option>
+            <option>Sports</option>
+            <option>Fun</option>
+          </select>
+          <input type="date" placeholder="Enter Date" class="col-lg-2 col-sm-4 col-12 py-2 mb-2 mx-1 border-0 ">
+          <select name="country" class="col-lg-2 col-sm-4 col-12 mb-2 py-2 mx-1">
+            <option>Number of people</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <input type="email" placeholder="   Your Email" class="col-lg-2 col-sm-4 col-12 py-2 border-0 mb-2 mx-1">
+          <input type="text" placeholder="CALCULATE NOW" class="col-lg-2 col-sm-4 col-12 py-2 mx-1 mb-2 bg-warning2 border-0 text-black text-center ">
+        </form> 
+      </div>
+    </div>
+  </section>
+  <!--estimate section end -->
+
+  <!-- blog section start -->
+  <section class="blog py-4">
+    <div class="container">
+      <div class="row">
+        <h3 class="fw-bold text-center">LATEST BLOG</h3>
+        <P class="px-5 col-md-8 text-center offset-md-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam exercitationem cum voluptates dolor earum odit sint sunt hic ipsa, ut nesciunt dolorem repudiandae unde enim aliquam corrupti omnis. Quasi.</P> 
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+           <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="./assets/img/blog1.jpeg" alt="10 things"  class="img-fluid ms-sm-2">
+              </div>
+              <div class="col-sm-12 col-md-6 ps-4">
+                <p class="mb-0">feb 01,2016</p>
+                <h6 >10 THINGS TODO BEFORE TRAVEL</h6>
+                <hr class="mb-3 mt-0" size="4px" style="width:50px; color:#ad0909">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid aperiam consequatur est maiores cupiditate eius commodi!</p>
+              </div>
+           </div>
+        </div>
+        <div class="col-sm-12 col-md-12  col-lg-6">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="./assets/img/blog.jpg" alt="lazy life" class="img-fluid ms-sm-2 ">
+              </div>
+              <div class="col-sm-12 col-md-6 ps-4">
+                <p class="mb-0">Jan 23, 2016</p>
+                <h6>SAY NO TO LAZY LIFE</h6>
+                <hr class="mb-3 mt-0" size="4px" style="width:50px; color:#008000">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid aperiam consequatur est maiores cupiditate eius commodi!</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog section end -->
+
+  <!-- footer section start -->
+   <section class="footer py-5">
+    <div class="container text-white">
+      <div class="row">
+        <div class="country col-lg-4 col-md-6 mb-3 ">
+          <h4>TOP COUNTRIES</h4>
+          <P class="text-secondary mb-0"><i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">United States </a> 
+          </P>
+
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">United Kingdom </a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Thailand </a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Newyork </a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">India </a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Italy </a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Denmark</a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Germany</a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">France</a> 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-earth-americas"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Australia</a> 
+          </P>
+
+        </div>
+        <div class="city col-lg-4 col-md-6 mb-3">
+          <h4>TOP CITIES</h4>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">London</a>
+             ,United Kingdom
+          </P>
+
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"class="text-decoration-none text-white">Newyork</a>
+              United States
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Bankock </a> 
+            Thailand
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Newyork </a>
+            Denmark 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">India </a> 
+            Delhi
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Italy </a> 
+            Spain
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Denmark</a>
+            Maleshia 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Germany</a>
+            Hongkong 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">France</a>
+            Russia 
+          </P>
+          <P class="text-secondary mb-0">
+            <i class="fa-solid fa-location-dot"></i>
+            Flight to 
+            <a href="#javascript:void()"  class="text-decoration-none text-white">Australia</a>
+            United States 
+          </P>
+
+        </div>
+        <div class="site col-lg-4 col-md-12 mb-3">
+          <h4>INTERNATIONAL SITES</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <P class="text-secondary mb-0">
+               <img src="./assets/img/austelia.png" class="img-fluid w-10" alt="">
+               <a href="#javascript:void()"  class="text-decoration-none text-white">Australia</a>  
+              </P> 
+              <P class="text-secondary mb-0">
+                <img src="./assets/img/afgani.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Afgani</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/albania.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Albania</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/algeria.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Algeria</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/angola.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Angola</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/bahamans.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Bahamans</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/bootan.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Bootan</a>  
+               </P>
+              
+            </div>
+            <div class="col-md-6">
+              <P class="text-secondary mb-0">
+                <img src="./assets/img/den.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Denmark</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/france.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">France</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/india.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">India</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/indo.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Indoneshia</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/nepal.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Nepal</a>  
+               </P>
+               <P class="text-secondary mb-0">
+                <img src="./assets/img/oman.png" class="img-fluid w-10" alt="">
+                <a href="#javascript:void()"  class="text-decoration-none text-white">Oman</a>  
+               </P>
+            </div>
+          </div>
+             
+        </div>  
+      </div>
+      <div class="footbotm row mt-3">
+        <div class="col-lg-10 col-md-12">
+          <div class="row">
+            <div class="foot col-lg-1 col-md-12 col-sm-12 text-sm-center text-md-center">
+              <img src="./assets/img/foot1.png" class=" img-fluid w-15 " alt="">
+            </div>
+            <div class="col-lg-11">
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">About Us</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Jobs</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Press</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Affilite</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Terms of use</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Privacy Policy</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Cookies</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Airlines</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Apps</a>
+              <a href="javascript:void()" class="text-decoration-none text-white me-3">Helps</a>
+            <p class="text-secondary mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vel, laborum exercitationem consequatur enim.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class=" social col-lg-2 col-md-12 text-sm-center text-md-center mt-2">
+          <a href="javascript:void()" class="text-decoration-none text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="javascript:void()" class="text-decoration-none text-white me-3"><i class="fa-brands fa-facebook"></i></a>
+          <a href="javascript:void()" class="text-decoration-none text-white me-3"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- footer section end -->
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
